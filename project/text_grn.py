@@ -13,5 +13,5 @@ generator = pipeline("text-generation", model="gpt2")
 
 # Generate text
 prompt = input("Enter a prompt: ")
-response = generator(prompt, max_length=50)
+response = generator(prompt, max_length=150)
 print(response[0]['generated_text'])
