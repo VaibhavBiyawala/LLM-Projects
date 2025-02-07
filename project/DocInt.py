@@ -4,7 +4,7 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 
 # Load a sentence-transformer model
-embedder = SentenceTransformer("msmarco-distilbert-base-v4")
+embedder = SentenceTransformer("sheldonrobinson / Phi-3.5-vision-instruct")
 
 # Function to extract text from PDF
 def extract_text_from_pdf(pdf_path):
@@ -15,7 +15,7 @@ def extract_text_from_pdf(pdf_path):
     return text
 
 # Function to split text into smaller chunks
-def split_text(text, chunk_size=300):
+def split_text(text, chunk_size=30):
     sentences = text.split(". ")
     chunks = []
     current_chunk = ""
